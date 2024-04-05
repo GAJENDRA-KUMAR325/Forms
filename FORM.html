@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FORM.css">
+</head>
+<body>
+    <form action="" id="myform" method="post">
+        <div class="heading">
+            <h1>Student Information</h1>
+        </div>
+        <div class="grid-container">
+            <div class="label grid-item">
+                <label for="">FirstName<span class="required">*</span>:</label>
+                <input type="text" placeholder="FirstName" name="FirstName" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">MiddleName<span class="required">*</span>:</label>
+                <input type="text" placeholder="MiddleName" name="MiddleName" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">LastName<span class="required">*</span>:</label>
+                <input type="text" placeholder="LastName" name="LastName" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">FatherName<span class="required">*</span>:</label>
+                <input type="text" placeholder="FatherName" name="FatherName" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">MotherName<span class="required">*</span>:</label>
+                <input type="text" placeholder="MotherName" name="MotherName" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">Contact<span class="required">*</span>:</label>
+                <input type="text" placeholder="Contact" name="Contact" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">ROLL Number<span class="required">*</span>:</label>
+                <input type="text" placeholder="ROLLNO." name="ROLLNO" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">Date of Birth<span class="required">*</span>:</label>
+                <input type="text" placeholder="DOB" name="DOB" required>
+            </div>
+            <div class="label grid-item">
+                <label for="">Email<span class="required">*</span>:</label>
+                <input type="text" placeholder="Email" name="Email" required>
+            </div>
+        </div>
+        <div class="btn">
+            <a href=""><button type="submit">Submit</button></a>
+            <a href="http://127.0.0.1:5500/FORM.html"><button>Reset</button></a>
+        </div>
+        <div class="warning">
+            <p><b>Note</b> : '*' Marked Fields Are Mendatory</p>
+        </div>
+    </form>
+    <script>
+        document.getElementById("myform").addEventListener("submit",function(event){
+            event.preventDefault();
+            const formData = new FormData(this);
+            const formObject = {};
+            for(let a in formData){
+                formObject[a] = formData[a];
+            }
+            console.log(formObject);
+        })
+    </script>
+</body>
+</html>

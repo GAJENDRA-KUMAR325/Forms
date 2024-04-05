@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+form{
+    width: 80%;
+    height: 100vh;
+    border-style : solid;
+    border-color: black;
+    margin: auto;
+    background: #a8ff78;
+    background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78); 
+    background: linear-gradient(to left, #78ffd6, #a8ff78); 
+}
+.heading{
+    margin: 35px auto 40px auto;
+}
+
+.heading h1{
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px rgb(245, 131, 24);
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 20px;
+    padding: 4px;
+    font-weight: 300;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item{
+    margin: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input:hover{
+    box-shadow: 2px 2px green;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px 35px 10px 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: rgb(103, 218, 103);
+}
+
+.required {
+    color: black; 
+    margin-left: 5px; 
+}
+
+input::placeholder{
+    font-size: 15px;
+}
+
+.warning{
+    margin-left: 30px;
+    font-weight: 200;
+    margin-top: 25px;
+}
